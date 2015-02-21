@@ -1,4 +1,3 @@
-# github-api
 Exploring the GitHub API
 Today we are going to create a tool that allows us to look up a github user via their username, and pull cool data from their account!
 

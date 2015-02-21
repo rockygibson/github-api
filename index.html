@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="github-api">
+
+<head>
+    <title>github API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="GitHubController">
+    <form>
+        <input type="text" placeholder="username" ng-model="searchText">
+        <button ng-click="getUserData()">Submit</button>
+    </form>
+    Name: {{userProfile.name}}
+    <br> Username: {{userProfile.username}}
+    <br>
+    <img ng-src="{{userProfile.picture}}">
+    <br> Repo Count: {{userProfile.repos}}
+    <br> Followers: {{userProfile.followers}}
+    <br> Following: {{userProfile.following}}
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>
+

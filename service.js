@@ -5,8 +5,8 @@ app.service('githubService', function($http, $q) {
     var sec = "45becb1dda65f5af435cb81048b8791bd02440f9";
     var param = "?client_id=" + id + "&client_secret=" + sec;
 
-    var deferred = $q.defer();
     this.getUser = function(username) {
+        var deferred = $q.defer();
         $http({
             method: 'GET',
             url: 'https://api.github.com/users/' + username + param,
